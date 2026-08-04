@@ -1,25 +1,25 @@
 {
  "hero": [
   {
-   "src": "hero-v2-1536.webp",
-   "w": 1535
+   "src": "hero-1536.webp",
+   "w": 1536
   },
   {
-   "src": "hero-v2-1100.webp",
+   "src": "hero-1100.webp",
    "w": 1100
   },
   {
-   "src": "hero-v2-760.webp",
+   "src": "hero-760.webp",
    "w": 760
   }
  ],
  "hero-portrait": [
   {
-   "src": "hero-portrait-v2-900.webp",
+   "src": "hero-portrait-900.webp",
    "w": 768
   },
   {
-   "src": "hero-portrait-v2-620.webp",
+   "src": "hero-portrait-620.webp",
    "w": 620
   }
  ],
@@ -635,32 +635,32 @@
    "w": 96
   }
  ],
- "client:absa-logo-bg": [
+ "client:alliance-francaise-mombasa": [
   {
-   "src": "clients/absa-logo-bg.webp",
+   "src": "clients/alliance-francaise-mombasa.webp",
    "w": 400,
-   "h": 400
+   "h": 252
   }
  ],
- "client:acek-logo": [
+ "client:kempinski": [
   {
-   "src": "clients/acek-logo.webp",
-   "w": 65,
-   "h": 65
+   "src": "clients/kempinski.webp",
+   "w": 250,
+   "h": 99
   }
  ],
- "client:icipe-logo-monochrome": [
+ "client:radisson-blu": [
   {
-   "src": "clients/icipe-logo-monochrome.webp",
-   "w": 280,
-   "h": 115
+   "src": "clients/radisson-blu.webp",
+   "w": 250,
+   "h": 76
   }
  ],
- "client:rotary-clubs-of-kenya": [
+ "client:republic-of-kenya": [
   {
-   "src": "clients/rotary-clubs-of-kenya.webp",
-   "w": 120,
-   "h": 48
+   "src": "clients/republic-of-kenya.webp",
+   "w": 400,
+   "h": 395
   }
  ],
  "client:safaricom": [
@@ -670,11 +670,25 @@
    "h": 25
   }
  ],
- "client:safaricom-international-jazz-festival": [
+ "client:world-bank": [
   {
-   "src": "clients/safaricom-international-jazz-festival.webp",
-   "w": 276,
-   "h": 268
+   "src": "clients/world-bank.webp",
+   "w": 330,
+   "h": 67
+  }
+ ],
+ "client:hemingways-collection": [
+  {
+   "src": "clients/hemingways-collection.svg",
+   "w": 0,
+   "h": 0
+  }
+ ],
+ "client:sarova-hotels-resorts": [
+  {
+   "src": "clients/sarova-hotels-resorts.svg",
+   "w": 0,
+   "h": 0
   }
  ]
 }

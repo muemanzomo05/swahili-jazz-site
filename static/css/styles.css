@@ -294,15 +294,13 @@ input { font: inherit; }
   letter-spacing: .22em;
   color: var(--white);
 }
-.nav .brand__mark { width: clamp(34px, 2.9vw, 42px); }
-.nav .brand__word { font-size: clamp(12.5px, .32vw + 11px, 16px); }
 
 .nav__links { display: none; }
 .nav__links ul { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 38px); }
 .nav__link {
   position: relative;
   font-family: var(--sans);
-  font-size: 13px; font-weight: 500;
+  font-size: 12px; font-weight: 500;
   letter-spacing: .14em; text-transform: uppercase;
   color: rgba(255, 255, 255, .74);
   padding-block: 6px;
@@ -632,7 +630,6 @@ input { font: inherit; }
   transition: background .45s var(--ease);
 }
 .event__link:hover { background: rgba(255, 255, 255, .032); }
-.event__link--past { grid-template-columns: auto minmax(0, 1fr); }
 
 .event__date {
   display: grid; place-items: center; align-content: center;
@@ -690,14 +687,20 @@ input { font: inherit; }
   align-items: center;
 }
 .client { display: grid; place-items: center; }
+/* The reference renders every client mark as a flat white silhouette at ~44%
+   opacity, which normalises logos that ship as black-on-transparent art. */
 .client img {
   width: auto; max-width: 100%;
   max-height: clamp(24px, 2.6vw, 34px);
   object-fit: contain;
-  opacity: .86;
+  /* .48 is a compromise: brighter than before for the wordmark logos, but
+     restrained enough that the two silhouette-only marks (Kenya seal,
+     Radisson block) do not dominate the row */
+  filter: brightness(0) invert(1);
+  opacity: .48;
   transition: opacity .5s var(--ease), transform .5s var(--ease-out);
 }
-.client img:hover { opacity: 1; transform: scale(1.05); }
+.client img:hover { opacity: .92; transform: scale(1.05); }
 
 /* --------------------------------------------------------------- gallery */
 .gallery__stage { position: relative; }
